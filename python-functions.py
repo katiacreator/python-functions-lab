@@ -21,3 +21,13 @@ print(occurances('fleep floop', 'e'))
 print(occurances('fleep floop', 'p'))
 print(occurances('fleep floop', 'ee'))
 print(occurances('fleep floop', 'fe'))
+
+def product(*args):
+  product = 1
+  for n in args:
+    product *= n
+  return product
+
+print(product(-1, 4)) # returns -4
+print(product(2, 5, 5)) # returns 50
+print(product(4, 0.5, 5)) # returns 10.0
